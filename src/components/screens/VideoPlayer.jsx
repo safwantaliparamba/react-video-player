@@ -157,6 +157,10 @@ const VideoContainer = styled.div`
     /* max-height: 80vh; */
     background-color: #111;
     position: relative;
+
+    *{
+        user-select: none;
+    }
 `
 const VideoOverlay = styled.div`
     z-index: 10;
