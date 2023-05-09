@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "gordita_regular";
+    color: #0a0a0a;
+}
+.anim-fade {
+    animation: fade 330ms ease-in-out 0ms;
+}
+@keyframes fadeIn {
+    0% { opacity: 0;
+        transform: scale(.9); 
+    }
+    100% { opacity: 1; 
+    transform: scale(1);}
+  }
+ol,
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #7e7e7e;
+}
+
+span,
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #666666;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+span {
+    font-size: 20px;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+#main  {
+    padding-top: 76px;
+    margin-left: 293px;
+    position: unset !important;
+}
+#account-action .sb-avatar__text div span {
+    color: #fff !important;
+}
+.button {
+    display: inline-block;
+    padding: 20px 55px;
+    cursor: pointer;
+    border-radius: 12px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 10px 14px 48px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(98.46deg, #32bcad -24.84%, #289a8e 144.56%);
+    font-family: "gordita_regular";
+}
+html.modal-enabled {
+    overflow: hidden !important;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* fonts */
+
+@font-face {
+    font-display: auto;
+    font-family: "gordita_regular";
+    src: url("../../assets/fonts/gordita-regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "gordita_medium";
+    src: url("../../assets/fonts/gordita-medium.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gordita_bold";
+    src: url("../../assets/fonts/gordita-bold.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.otp-field input {
+    width: 58px !important;
+    font-size: 36px !important;
+    margin-right: 10px !important;
+    border-bottom:2px solid  #7f7f7f !important;
+
+}
+
+@media all and (max-width: 768px) {
+    .otp-field input {
+        margin-right: 7px !important;
+        width: 38px !important;
+    }
+}
+
+.otp-field  {
+    margin-right: 12px !important;
+}
+.otp-field input::placeholder{
+    position: absolute !important;
+    top: 30px !important;
+
+}
+
+.otp-field input::placeholder {
+    content: "<span></span>" !important;
+    width: 36px !important;
+    height: 2px !important;
+    top: 40px !important;
+    border-radius: 5px !important;
+    background-color: #747474 !important;
+}
+input[type="checkbox"] {
+    background-color: #fff !important;
+    
+    width: .5em;
+  height: .5em;
+  border-radius: 0.15em;
+  margin-right: 0.5em;
+  border: 3px solid #747474 !important;
+  outline: none;
+  cursor: pointer;
+    
+}
+img.drop-down {
+    width: 10px;
+    display: block;
+    
+}
+img.green {
+    display: none;
+}
+img.white {
+    display: none;
+}
+.active img.white {
+    display: block;
+}
+.active img.video-green {
+    display: none;
+}
+.active img.one{
+        display: none;
+    
+}
+.active img.green {
+    display: block;
+    width: 25px;
+}
+
+.details {
+    display:block ;
+}
+.course {
+    display: none;
+}
+.active .course {
+    display: block;
+}
+.active .details {
+    display: none;
+}
+
+@media all and (max-width:1280px){
+    #main {
+        margin-left: 69px;
+    }
+}
+@media all and (max-width:1080px){
+    #main {
+        margin-left: 74px;
+    }
+    .otp-field input {
+        font-size: 34px !important;
+    
+    }
+    .otp-field input::placeholder {
+        width: 34px !important;
+
+    }
+}
+@media all and (max-width: 980px) {
+    #main {
+      
+        padding-top: 64px;
+    }
+}
+@media all and (max-width: 768px) {
+    #main{     
+        margin-left: 20px;
+    }
+    .otp-field input {
+        font-size: 28px !important;
+    
+    }
+    .otp-field input::placeholder {
+        width: 28px !important;
+    }
+    @media all and (max-width: 640px) {
+        #main{
+            margin-left: 11px;
+        }
+        .sb-avatar__text {
+            width:45px !important;
+            height: 45px !important;
+        }
+        #account-action .sb-avatar__text div span {
+            font-size: 14px !important;
+
+        }
+    }
+    @media all and (max-width: 480px) {
+        #main{
+            margin: 0;
+        }
+        .sb-avatar__text {
+            width:40px !important;
+            height: 40px !important;
+        }
+    }
+    
+}
